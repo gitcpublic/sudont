@@ -8,6 +8,7 @@ A small bash script &amp; MySQL db to define who is &amp; isn't allowed to use s
 ### Configuration;  
 Create the directory ```/etc/sudont/``` and place the sudont.sh script in there.  
 Create the directory ```/etc/sudont/temp/``` (leave it blank, it'll be used temporarily during the checking process).  
+Apply 777 permissions to the temp folder: ```chmod 777 /etc/sudont/temp```  
 In the user's .bashrc file, add: ```alias sudo="bash /etc/sudont/sudont.sh && sudo"```  
 
 ### Times permitted for sudo;  
